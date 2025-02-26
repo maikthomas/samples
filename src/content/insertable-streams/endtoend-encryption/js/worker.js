@@ -56,6 +56,7 @@ function encodeFunction(encodedFrame, controller) {
   const metadata = encodedFrame.getMetadata();
   console.log('METADATA: ', metadata);
   console.log('PAYLOAD TYPE: ', metadata.payloadType);
+  console.log('MIME TYPE: ', metadata.mimeType);
   if (scount++ < 30) { // dump the first 30 packets.
     dump(encodedFrame, 'send');
   }
